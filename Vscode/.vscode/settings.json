@@ -1,0 +1,8 @@
+{
+    "editor.find.addExtraSpaceOnTop": false,
+    "editor.find.cursorMoveOnType": false,
+    "editor.find.loop": false,
+    "editor.fontSize": 17,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.renderMarginRevertIcon": true
+}
