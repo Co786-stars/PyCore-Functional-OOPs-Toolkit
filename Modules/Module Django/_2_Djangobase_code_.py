@@ -69,3 +69,4 @@
 # where python                               → shows the exact location of the Python executable
 # pip install django                         → installs the Django framework
 # django-admin startproject myproject        → creates a new Django project with default settings and structure
+
