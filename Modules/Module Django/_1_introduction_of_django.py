@@ -135,5 +135,52 @@ How Django is different from other Python frameworks
 """
 
 
+# ______________________________________________________________________________________________________________________# ______________________________________________________________________________________________________________________
+"""
+How to install and use Django ?
+> Django Installation & Usage Guide
+    →  Verify Python and pip
+    →  pip is the official package installer (package manager) for Python
+           python --version
+           python -m pip install --upgrade pip
 
+    → Create a Virtual Environment (recommended)
+           python -m venv myenv
+           # Activate environment:
+           # Windows: myenv\Scripts\activate
+           # Linux/Mac: source myenv/bin/activate
+    
+    → Install Django using pip
+           pip install django
+           # Verify installation:
+           python -m django --version
+    
+    → Start a New Django Project
+           django-admin startproject myproject
+           cd myproject
+    
+    → Run Development Server
+           python manage.py runserver
+           # Open browser at http://127.0.0.1:8000/
+    
+    → Create a Django App
+           python manage.py startapp myapp
+           # Register 'myapp' in settings.py under INSTALLED_APPS
+    
+    → Database Migrations
+           python manage.py makemigrations
+           python manage.py migrate
+    
+    → Create Superuser for Admin Panel
+           python manage.py createsuperuser
+           # Access admin at http://127.0.0.1:8000/admin
+    
+    ================================================================
+    ⚠️ Notes:
+        - Always use virtual environments to avoid conflicts.
+        - Built-in server is for development only, not production.
+        - Keep Django updated: pip install --upgrade django
+    =================================================================
+"""
+# ______________________________________________________________________________________________________________________
 
