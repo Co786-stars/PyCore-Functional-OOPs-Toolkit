@@ -1,5 +1,7 @@
 """
-# Django Installation & Basic CMD Commands Guide
+_____________________________________________________________________________________________________
+# ______________In this module we see Django Installation & Basic CMD Commands Guide_________________#
+_____________________________________________________________________________________________________
 
 ## 1. Update pip (Python package manager)
 > python -m pip install --upgrade pip

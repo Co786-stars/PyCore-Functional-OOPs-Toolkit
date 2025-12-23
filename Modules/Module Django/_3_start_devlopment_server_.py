@@ -1,5 +1,7 @@
 """
-# Django Project Setup and Execution Guide
+_____________________________________________________________________________________________________________
+# ________________________________Django Project Setup and Execution Guide___________________________________#
+ _____________________________________________________________________________________________________________
 
 ## 1. Create a New Project
 - First, create a folder where you want to store the project.
@@ -30,5 +32,10 @@
 - Now the server will start at:
     Starting development server at http://127.0.0.1:4444/
 - Access your project at http://127.0.0.1:4444/
+
+
+## After Run the server setup own IDE
+-  we have many of them like VsCode, Pycharm, Jupiter Notebook...etc
+   I think VsCode is better for development then other according to your preference choose your IDE.
 
 """

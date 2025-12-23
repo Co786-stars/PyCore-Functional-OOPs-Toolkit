@@ -1,10 +1,12 @@
 """
+# _____________________________________________________________________________________________________
 In the module we are going to Discuss the topic
 - What is Django
 - Why we use Django
 - Companies that use Django
 - Importance of Django
 - How Django is different from other Python frameworks
+#_____________________________________________________________________________________________________
 """
 
 
