@@ -23,7 +23,7 @@ class Copy(Book):
 
     def __init__(self):
         super().__init__() # attribute are created directly from parents for school
-    
+
 school = Copy()
 p = school.B_name
 q = school.B_price 
