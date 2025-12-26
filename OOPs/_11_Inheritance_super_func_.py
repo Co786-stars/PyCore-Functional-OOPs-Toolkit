@@ -94,4 +94,3 @@ obj3 = Concept() # output → variable 20
 # 3. super().__init__() finds Device.__init__ next in MRO and executes it.
 # 4. Device.__init__ sets self.var = "variable", self.num = 20 and prints "variable 20".
 # 5. Control/interpreter returns to Concept.__init__; Concept does no extra assignments.
-
