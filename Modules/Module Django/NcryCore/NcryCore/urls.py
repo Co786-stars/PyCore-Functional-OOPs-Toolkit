@@ -1,19 +1,3 @@
-"""
-URL configuration for NcryCore project.
-
-The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/6.0/topics/http/urls/
-Examples:
-Function views
-    1. Add an import:  from my_app import views
-    2. Add a URL to urlpatterns:  path('', views.home, name='home')
-Class-based views
-    1. Add an import:  from other_app.views import Home
-    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
-Including another URLconf
-    1. Import the include() function: from django.urls import include, path
-    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
-"""
 from django.contrib import admin
 from django.urls import path
 from . import views   # import views from the same app
@@ -35,4 +19,12 @@ urlpatterns = [
 
     path('fill/<int:id>/', views.d3nothing_fill, name="routing3"),
     # captures integer values like /fill/99/
+
+    # Basic practice
+    path('pqr/', views.new_fun, name="newz_fun_practice"),
+
+    # Homepage route (render index.html)
+    path('', views.homepage, name="homepage"),
 ]
+
+
