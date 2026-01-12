@@ -1,7 +1,7 @@
 """
 >In this module we are going to Discuss ___________________Inheritance_____and__________Type of inheritance_____________
 💫 Inheritance ✅
-💫 Multipal Inheritance
+💫 Multipal Inheritance ✅
 💫 Multi level Inheritance
 💫 method Overriding in python
 💫 Operator Overloading in python
@@ -29,6 +29,14 @@
 # the parent's constructor behavior, call the parent's __init__() using super() function
 
 
+# Types of Inheritance in Python :-
+# ➡ Single Inheritance
+# ➡ Multiple Inheritance
+# ➡ Multi-level Inheritance
+# ➡ Hierarchical Inheritance
+# ➡ Hybrid Inheritance
+
+
 # Why use inheritance :-
 # It promotes code reusability and helps organize your code by creating a hierarchy of related classes.
 # It provides modularity, maintenance, polymorphism and Efficiency Boost in the programs.
@@ -40,6 +48,22 @@
 # when we call super(), it doesn't return a value directly. it returns a proxy object that allows you to call methods from a parent or superclass.
 # super() uses the method resolution order (MRO) to find the next class in line.
 # It’s especially useful in multiple inheritance to ensure cooperative method calls.
+
+
+
+# ➡➡➡➡  Single Inheritance ➡➡➡➡
+#➡ ➡ ➡ ➡ ➡ ➡ ➡ ➡ ➡ ➡ ➡ ➡ ➡ ➡
+class Parents:
+    """this is docstring"""
+    def single(self):
+        return f"Single Inheritance"
+
+class Child(Parents):
+    """this is docstring"""
+    def __init__(self):
+        """init is a dunder method"""
+        pass
+#➡ ➡ ➡ ➡ ➡ ➡ ➡ ➡ ➡ ➡ ➡ ➡ ➡ ➡
 
 
 # CODES/SYNTAX : -
@@ -74,6 +98,7 @@ class ChildClass(ParentsClass):
 
 _vlu = ChildClass("laptop", "pen", "paper")
 print(_vlu(30)) # this line trigger __call__
+
 
 
 

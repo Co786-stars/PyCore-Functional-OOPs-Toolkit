@@ -490,7 +490,7 @@ print("size        : ", obj.__sizeof__())  # defines this attribute: syntax → 
 ________________________________________________________________________________________________________________________
 Note : -
 
-✅ Examples
+✅ 💫💫💫 Examples 💫💫💫
 
 Attributes:(non-callable)
 __dict__, __doc__, __class__, __module__
@@ -649,3 +649,4 @@ obj = X()
 obj()
 #         __call__() is a dunder method that is triggered when obj() is invoked.
 #         It is used to make the object behave like a function.
+

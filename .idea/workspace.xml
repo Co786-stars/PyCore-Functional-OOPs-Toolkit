@@ -1,13 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="7c445e9a-11f1-4b4d-b9a6-f7666a49daba" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Modules/Module Django/_3_start_devlopment_server_.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Module Django/_3_start_devlopment_server_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OOPs/_0_Different_types_of_python_question_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class Related/_4_Built_in_variable_attributes_.py" beforeDir="false" afterPath="$PROJECT_DIR$/Class Related/_4_Built_in_variable_attributes_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPs/_2_User_define_class_.py" beforeDir="false" afterPath="$PROJECT_DIR$/OOPs/_2_User_define_class_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPs/_4_Built_in_function_or_attributes_.py" beforeDir="false" afterPath="$PROJECT_DIR$/OOPs/_4_Built_in_function_or_attributes_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPs/_7_Inheritence_&amp;_Related_topic_.py" beforeDir="false" afterPath="$PROJECT_DIR$/OOPs/_7_Inheritence_&amp;_Related_topic_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPs/_9_Inheritance_pailndrome_number_.py" beforeDir="false" afterPath="$PROJECT_DIR$/OOPs/_9_Inheritance_pailndrome_number_.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -23,6 +40,8 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.Class23_Multipal_Inheritance.executor&quot;: &quot;Run&quot;,
+    &quot;Python._12_Multipal_Inheritance_.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,

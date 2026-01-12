@@ -30,8 +30,20 @@ try:
 except:
     print("Enter correct input")
 
-
-
+"""
+Step-by-step flow line 19 :-
+→ Take the integer → 123
+    str(123) → "123"
+→ Reverse the string → "123"
+    reversed("123") → "3", "2", "1"
+→ Join the reversed characters → "321"
+    ''.join(["3","2","1"]) → "321"
+→ Convert back to integer → 321
+    int("321") → 321
+Final check:
+- If reversed value == original value → Palindrome
+- Otherwise → Not Palindrome
+"""
 
 
 
