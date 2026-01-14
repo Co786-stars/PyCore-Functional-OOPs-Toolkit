@@ -1,5 +1,14 @@
 """
 In this module we are Discuss __________________What is multipal Inheritance_______________How we use it____________
+
+Inheritance ✅ Multipal level
+Syntax :-
+class A:
+    # features of A
+class B:
+    # features of B
+class C(A, B):
+    # features of A + B + C
 """
 
 # What is multipal Inheritance ?
@@ -7,10 +16,10 @@ In this module we are Discuss __________________What is multipal Inheritance____
 # from more than one parent class, enabling the child class to combine functionalities from multiple sources.
 
 # In simple way : -
-# Multiple inheritance means a class can have more than one parent, so it gets the features of all those parents.
+# Multiple inheritance mean s a class can have more than one parent, so it gets the features of all those parents.
 
 
-# visualization of Example of Multipal Inheritance : -
+# Visualization of Multipal Inheritance : -
 # Parent Class 1     Parent Class 2
 #      |                   |
 #      +------+   +--------+
@@ -62,10 +71,6 @@ class Child(Parents1st, Parents2nd):
 
 obj = Child()
 print(obj.var1, obj.var2)  # output is display
-
-
-
-
 
 
 # CODE/SYNTAX : -
@@ -134,3 +139,69 @@ try:
 
 except ValueError as v:
     print(f"Pls enter valid output above are wrong {v}")
+
+
+
+
+
+# CODE/SYNTAX : -Example small overview
+class A:
+    def __init__(self, var1 ="value"):
+        self.var1 = var1
+
+    def fun1(self):
+        return f'this is fun1'
+
+class B:
+    def __init__(self, var2 ="value2"):
+        self.var2 = var2
+
+    def fun2(self):
+        return f"this is fun2"
+
+class C(A,B):
+    def __init__(self, p1, p2):
+        A.__init__(self, var1 = p1)
+        B.__init__(self, var2 = p2)
+
+    def fun3(self):
+        return f"{super().fun1()} {super().fun2()}"
+
+# creating an object
+try:
+    obj = C("abc", "xyz")
+    print(obj.var1, obj.var2)
+    print(obj.fun3())
+except ValueError:
+    print("pls enter valid number")
+
+
+# EXPLANATION : -
+# Step 1: Python reads the class definitions (A, B, C) but does not execute them yet.
+#         It just stores them in memory as blueprints.
+
+# Step 2: When we create an object of class C (obj = C("abc", "xyz")),
+#         Python automatically calls the constructor (__init__) of class C.
+
+# Step 3: Inside C.__init__, we explicitly call A.__init__ and B.__init__.
+#         - A.__init__ assigns self.var1 = p1 ("abc")
+#         - B.__init__ assigns self.var2 = p2 ("xyz")
+#         Note: 'self' here refers to the same object 'obj' of class C,
+#         so both attributes var1 and var2 belong to the same object.
+
+# Step 4: After initialization, control returns to the object creation line.
+#         Now 'obj' has two attributes: obj.var1 = "abc" and obj.var2 = "xyz".
+
+# Step 5: print(obj.var1, obj.var2) → displays "abc xyz".
+
+# Step 6: When obj.fun3() is called:
+#         - fun3 tries to use methods from parent classes.
+#         - In the corrected version, we explicitly call A.fun1(self) and B.fun2(self).
+#         - This returns "this is fun1 this is fun2".
+
+# Step 7: Because fun3 returns a string, print(obj.fun3()) will display:
+#         "this is fun1 this is fun2".
+
+# Step 8: If any error occurs (like wrong arguments), the try/except block
+#         catches ValueError and prints "pls enter valid number".
+

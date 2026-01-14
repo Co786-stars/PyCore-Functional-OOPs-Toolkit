@@ -1,7 +1,6 @@
 # 0️⃣ QUESTION_______From__Multipal__Inheritance_______
 """
 🎁 PRACTICE QUESTION : ➖ Related to Multipal Inheritance ➖
-
 You're creating a system for a tech company. You need to design classes for:
 
 1. Programmer Class:
@@ -25,15 +24,18 @@ You're creating a system for a tech company. You need to design classes for:
 Create these classes and test them with:
 name = "Alice", programming_language = "Python",
 team_size = 5, project_name = "AI Assistant"
-
-Expected Output:
-Alice
-Alice is coding in Python
-Language: Python
-Alice is managing 5 people
-Team Size: 5
-Alice is leading AI Assistant
-Alice is coding in Python
-Alice is managing 5 people
 """
+
+
+# 0️⃣ QUESTION_______From___Multi___leval___Inheritance_______
+"""
+🎁 PRACTICE QUESTION : ➖ Related to Multipal Inheritance ➖
+# Create a Python program using multi-level inheritance to model a Library System:
+# 1. Class LibraryItem → attributes: title, author; method: display_info()
+# 2. Class Book (inherits LibraryItem) → attribute: genre; method: display_info()
+# 3. Class BorrowedBook (inherits Book) → attributes: borrower_name, due_date; method: display_info()
+# Finally, create an object of BorrowedBook and demonstrate that it can access attributes/methods
+# from all three levels (LibraryItem, Book, BorrowedBook).
+"""
+
 

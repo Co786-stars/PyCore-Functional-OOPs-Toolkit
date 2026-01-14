@@ -8,7 +8,18 @@
 💫 MRO Method Resolution in python
 💫 Super() function in Inheritance
 💫 💫💫💫💫💫💫💫💫💫💫💫💫💫💫💫💫💫 Today in this module only [introduction].💫💫💫💫💫💫💫💫💫💫💫💫💫💫💫💫💫
+
+Inheritance ✅ single level
+Syntax : -
+class Parentclass:
+    def __init__(self, arg1):
+        self.argument1 = arg1
+
+class Childclass(Parentclass):
+    def __init__(self, child_arg1):
+        self.child_argument = child_arg1
 """
+
 
 # Inheritance : -
 # Inheritance is fundamental concept of an OOPs that allow to create a new class based on existing class

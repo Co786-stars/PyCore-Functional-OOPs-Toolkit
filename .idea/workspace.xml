@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c445e9a-11f1-4b4d-b9a6-f7666a49daba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/OOPs/_0_Different_types_of_python_question_.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OOPs/_13_Multi_level Inheritance_.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Class Related/_4_Built_in_variable_attributes_.py" beforeDir="false" afterPath="$PROJECT_DIR$/Class Related/_4_Built_in_variable_attributes_.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOPs/_2_User_define_class_.py" beforeDir="false" afterPath="$PROJECT_DIR$/OOPs/_2_User_define_class_.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOPs/_4_Built_in_function_or_attributes_.py" beforeDir="false" afterPath="$PROJECT_DIR$/OOPs/_4_Built_in_function_or_attributes_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPs/_0_Different_types_of_python_question_.py" beforeDir="false" afterPath="$PROJECT_DIR$/OOPs/_0_Different_types_of_python_question_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPs/_12_Multipal_Inheritance_.py" beforeDir="false" afterPath="$PROJECT_DIR$/OOPs/_12_Multipal_Inheritance_.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OOPs/_7_Inheritence_&amp;_Related_topic_.py" beforeDir="false" afterPath="$PROJECT_DIR$/OOPs/_7_Inheritence_&amp;_Related_topic_.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOPs/_9_Inheritance_pailndrome_number_.py" beforeDir="false" afterPath="$PROJECT_DIR$/OOPs/_9_Inheritance_pailndrome_number_.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,18 +34,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.Class23_Multipal_Inheritance.executor&quot;: &quot;Run&quot;,
-    &quot;Python._12_Multipal_Inheritance_.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/lenovo/OneDrive/Documents/Python 2.0/PyCore-Functional-OOPs-Toolkit&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.Class23_Multipal_Inheritance.executor": "Run",
+    "Python._12_Multipal_Inheritance_.executor": "Run",
+    "Python._13_Multi_level Inheritance_.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/lenovo/OneDrive/Documents/Python 2.0/PyCore-Functional-OOPs-Toolkit"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
