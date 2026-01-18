@@ -1,11 +1,6 @@
 """
 In this module we are discussed_______________how to create dynamic routes/url___________________
 """
-#Steps to create :-
-# → first of all create a function in views file
-# →
-
-
 
 # In details :-
 """

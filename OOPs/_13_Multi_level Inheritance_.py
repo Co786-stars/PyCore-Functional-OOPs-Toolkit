@@ -1,5 +1,7 @@
 """
 In this module we are discussed _________multi leval inheritance_____________How we use this____________________
+Inheritance : - 
+Multi level Inheritance ✅
 syntax : -
 class A:
     # attributes of class A
@@ -59,22 +61,48 @@ print(c.name, c.age, c.occupation) # output : parents,  10, analyst
 #➡ ➡ ➡ ➡ ➡ ➡ ➡ ➡ ➡ ➡ ➡ ➡ ➡ ➡ ➡ ➡ ➡ ➡ ➡ ➡ ➡ ➡ ➡ ➡ ➡ ➡ ➡ ➡ ➡
 
 
-# CODE/SYNTAX : -
 
+# CODE/SYNTAX : -
 class LibraryItem:
-    """this is docstring"""
+    """Represents a generic library item"""
     def __init__(self, title, author):
         self.title = title
         self.author = author
 
     def display_info(self):
-        """this is docstring"""
+        """Display basic info"""
+        return f"Title : {self.title} Author : {self.author}"
 
 class Book(LibraryItem):
-    """this is docstring"""
+    """Represents a book in the library"""
     def __init__(self, title, author, genre):
         super().__init__(title, author)
         self.generation = genre
 
     def display_info(self):
-        """this is dos string"""
+        """Display book info"""
+        return (f"My book title is {self.title} with {self.generation} "
+                f"generation and his author is {self.author}")
+
+class BorrowedBook(Book):
+    """Represents a borrowed book"""
+    def __init__(self, title, author, genre, borrower_name):
+        super().__init__(title, author, genre)
+        self.borrower_name = borrower_name
+
+    def display_info(self):
+        """Display borrowed book info"""
+        return (f"Book {self.generation} generation book title name is {self.title} "
+                f"and his author is {self.author} now borrowed via {self.borrower_name}")
+
+try:
+
+    # Creating an object from BorrowBook
+    book = BorrowedBook("crash course", "luther", "5th", "Wizard")
+
+    var = book.display_info()
+    print(var) # display the single line statement
+except ValueError:
+    print("Pls enter the correct value")
+
+

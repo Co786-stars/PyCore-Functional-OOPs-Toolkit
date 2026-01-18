@@ -65,9 +65,11 @@ def new_fun(request):
     return HttpResponse(x)   # Output will be 2
 
 
-# -------------------------------
-# HOMEPAGE (Rendering HTML template)
-# -------------------------------
+# ---------------------------------------------------------------
+#          -----------------------------------------
+# -------HOMEPAGE (Rendering HTML template)---(((VVI)))-----------
+#          -----------------------------------------
+# ---------------------------------------------------------------
 
 def homepage(request):
     """
@@ -75,4 +77,41 @@ def homepage(request):
     It looks for 'index.html' inside your templates folder.
     URL: /
     """
-    return render(request, "index.html")   # render(request, template_name)
+    return render(request, "index.html")   # render(request, template_name)/link the function homepage
+
+
+def main_page(request):
+    """try to pass the data from view to templet/file.html"""
+    context={
+        'title':'Wizard', # simply how to pass value from views to templet files
+        'variable':'This is a simple homepage layout. You can customize it with your own content.',
+        'tab':["Python", "java", "c++"], # given an example how for loop is use in django to pass views data to templet
+        'details':[
+            {'Email':'xyz1246@gmail.com', 'Phone':9123654729},
+            {'Email':'pqr6521@gmail.com', 'Phone':8463175315},
+            {'Email':'abc8976@gmail.com', 'Phone':2143569841}
+        ]
+    }
+
+    return render(request, 'Homepage.html', context) # return django/views data to templet/html web file
+
+
+
+def next_page(request):
+    """try to display the data from view to templet"""
+    detail={
+        'var':'In this module we discussed How we use if and els using django module',
+        'lst':[10, 20, 30, 40, 50]
+    }
+    return render(request, 'otherPage.html', detail)
+# __________________________________________________________________________________________________________________
+
+
+
+# Example to explain :---------#
+# _____________________________#
+def inside_admin(request, unknown):
+
+    return HttpResponse(f"<h1>{unknown}</h1>") # unknown return  dynamic url/value
+
+

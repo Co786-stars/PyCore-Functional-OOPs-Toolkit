@@ -23,8 +23,24 @@ urlpatterns = [
     # Basic practice
     path('pqr/', views.new_fun, name="newz_fun_practice"),
 
-    # Homepage route (render index.html)
-    path('', views.homepage, name="homepage"),
+
+    # ________________________________________________________________________________________________
+
+    # Homepage route (render, index.html)
+    # path('', views.homepage, name="homepage"), # using the ('') to directly open/target the homepage
+
+    # Pass the data from views to templet to practice for loop
+    # path('', views.main_page, name="second_page"),
+
+    # pass the data from views to templet to practice conditional loop
+    path('', views.next_page, name="other_page"),
+
+    # ________________________________________________________________________________________________
+
+    #simple another example Dynamic route int, if we want string then use str, slug...etc
+    # path('pqr/<int:unknown>', views.inside_admin, name="simple example" )
+    path('pqr/<unknown>', views.inside_admin, name="simple example" )  # if we want any random value
+
 ]
 
 
