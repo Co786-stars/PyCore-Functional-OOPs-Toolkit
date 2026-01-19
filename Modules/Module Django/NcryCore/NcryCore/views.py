@@ -81,11 +81,11 @@ def homepage(request):
 
 
 def main_page(request):
-    """try to pass the data from view to templet/file.html"""
+    """try to pass the data from view to templates/file.html"""
     context={
-        'title':'Wizard', # simply how to pass value from views to templet files
+        'title':'Wizard', # simply how to pass value from views to templates files
         'variable':'This is a simple homepage layout. You can customize it with your own content.',
-        'tab':["Python", "java", "c++"], # given an example how for loop is use in django to pass views data to templet
+        'tab':["Python", "java", "c++"], # given an example how for loop is use in django to pass views data to templates
         'details':[
             {'Email':'xyz1246@gmail.com', 'Phone':9123654729},
             {'Email':'pqr6521@gmail.com', 'Phone':8463175315},
@@ -93,18 +93,23 @@ def main_page(request):
         ]
     }
 
-    return render(request, 'Homepage.html', context) # return django/views data to templet/html web file
+    return render(request, 'Homepage.html', context) # return django/views data to templates/html web file
 
 
 
 def next_page(request):
-    """try to display the data from view to templet"""
+    """try to display the data from view to templates"""
     detail={
         'var':'In this module we discussed How we use if and els using django module',
         'lst':[10, 20, 30, 40, 50]
     }
     return render(request, 'otherPage.html', detail)
+
+
+def static_practic(request):
+    return render(request, 'otherpage1_.html')
 # __________________________________________________________________________________________________________________
+
 
 
 

@@ -29,11 +29,14 @@ urlpatterns = [
     # Homepage route (render, index.html)
     # path('', views.homepage, name="homepage"), # using the ('') to directly open/target the homepage
 
-    # Pass the data from views to templet to practice for loop
+    # Pass the data from views to templates to practice for loop
     # path('', views.main_page, name="second_page"),
 
-    # pass the data from views to templet to practice conditional loop
-    path('', views.next_page, name="other_page"),
+    # pass the data from views to templates to practice conditional loop
+    # path('', views.next_page, name="other_page"),
+
+    #try to learn how manage the file
+    path('', views.static_practic, name="otherpage_1"),
 
     # ________________________________________________________________________________________________
 

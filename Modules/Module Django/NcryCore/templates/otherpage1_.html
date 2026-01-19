@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Simple HTML Form</title>
+<!--   CSS link -->
+<!--  <link rel="stylesheet" href="/static/CSS/other1page.css">-->
+
+{% load static %}    <!--use to load/address the static folder location-->
+<link rel="stylesheet" href="{% static 'CSS/other1page.css' %}">  <!--django tag ( method to call in html templates ) -->
+
+<!--   JS link -->
+  <script >
+  // Simple check  -> Inline
+  console.log("✅ JS file is attached and running!");
+  alert("✅ JS file is attached and running!");
+  </script>
+<!--<script src="{% static 'js/other1paage.js' %}"></script>-->    <!-- Django tag method to link js to  html templet -->
+
+
+</head>
+<body>
+
+  <h2>Registration Form</h2>
+
+  <form action="/submit" method="post">
+
+    <!-- Text input -->
+    <label for="fullname">Full Name:</label><br>
+    <input type="text" id="fullname" name="fullname" required><br><br>
+
+    <!-- Email input -->
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <!-- Password input -->
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <!-- Radio buttons -->
+    <p>Gender:</p>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+
+    <!-- Checkbox -->
+    <p>Interests:</p>
+    <input type="checkbox" id="coding" name="interests" value="coding">
+    <label for="coding">Coding</label><br>
+    <input type="checkbox" id="music" name="interests" value="music">
+    <label for="music">Music</label><br><br>
+
+    <!-- Dropdown -->
+    <label for="country">Country:</label><br>
+    <select id="country" name="country">
+      <option value="india">India</option>
+      <option value="usa">USA</option>
+      <option value="uk">UK</option>
+      <option value="other">Other</option>
+    </select><br><br>
+
+    <!-- Textarea -->
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
+
+    <!-- Submit button -->
+    <input type="submit" value="Register">
+
+  </form>
+
+</body>
+</html>

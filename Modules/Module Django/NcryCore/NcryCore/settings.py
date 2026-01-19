@@ -54,7 +54,7 @@ ROOT_URLCONF = 'NcryCore.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR, "templet"],
+        'DIRS': [BASE_DIR/ "templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -115,3 +115,22 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+
+
+# __________________________________________________MY CODE______________________________
+# __________________________________________________MY CODE______________________________
+# __________________________________________________MY CODE______________________________
+# Base directory of your project
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+# Static files (CSS, JavaScript, Images)
+# STATIC_URL = '/static/'
+
+# Where Django will look for static files during development
+STATICFILES_DIRS = [
+    BASE_DIR / "static",   # global static(name of dir) folder give the permission to folder
+]
+
+# For production (when you run collectstatic)
+STATIC_ROOT = BASE_DIR / "staticfiles"

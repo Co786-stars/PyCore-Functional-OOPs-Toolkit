@@ -70,7 +70,7 @@ i) Generalization
 Objects with common attributes and behavior are grouped together into a logical unit called a class, and the process is 
 called classification
 
-means that a class is a blueprint/templet/prototype that defines the common properties (attributes) and actions (behaviors) of a group of objects. 
+means that a class is a blueprint/templates/prototype that defines the common properties (attributes) and actions (behaviors) of a group of objects. 
 the process of organizing these objects into classes based on their similarities is known as classification.
 
 There are the two type of class user-define and Bulit-in  
