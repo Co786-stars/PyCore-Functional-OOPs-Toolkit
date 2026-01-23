@@ -83,18 +83,24 @@
     padding:10px;
     margin:5px;
     }
+
+    /* Targets <a> inside .active within header and makes background red */
+    header .active a{
+      background:red;
+    } /* There are two way to use or highlight the dynamic link */
   </style>
 </head>
 <body>
   <header>
     <h2>My Website</h2>
     <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+      <ul> <!--LINK CONNECTING WEB PAGE USING ANCHOR TAG and DJANGO TAG-->
+        {{request.path}} <!--it use to manage the request path -->
+        <li class="active"><a href="/">Home</a></li>
+        <li><a href="/admin">About</a></li>  <!-- ANCHOR/HTML TAG giving the url name from url.py to navigate-->
+        <li><a href="/pqr">Services</a></li> <!-- -->
+        <li><a href="{% url 'new_admin' %}">Contact</a></li> <!--need to pass value of name parameter in from url.py -->
+      </ul> <!-- URL/DJANGO TAG method to connect the web pages {p url 'name' p}-->
     </nav>
   </header>
 

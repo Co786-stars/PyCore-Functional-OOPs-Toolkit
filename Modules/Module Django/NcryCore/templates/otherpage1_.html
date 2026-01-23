@@ -1,27 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
+<!--_________________________________________________________________________________________________-->
+<!--{% load static %}-->
+<!--&lt;!&ndash;<!DOCTYPE html>&ndash;&gt;-->
+<!--<html lang="en">-->
 
-<head>
-  <meta charset="UTF-8">
-  <title>Simple HTML Form</title>
-<!--   CSS link -->
-<!--  <link rel="stylesheet" href="/static/CSS/other1page.css">-->
+<!--<head>-->
+<!--  <meta charset="UTF-8">-->
+<!--  <title>Simple HTML Form</title>-->
+<!--&lt;!&ndash;   CSS link &ndash;&gt;-->
+<!--&lt;!&ndash;  <link rel="stylesheet" href="/static/CSS/other1page.css">&ndash;&gt;-->
 
-{% load static %}    <!--use to load/address the static folder location-->
-<link rel="stylesheet" href="{% static 'CSS/other1page.css' %}">  <!--django tag ( method to call in html templates ) -->
+<!--   &lt;!&ndash;use to load/address the static folder location&ndash;&gt;-->
+<!--<link rel="stylesheet" href="{% static 'CSS/other1page.css' %}">  &lt;!&ndash;django tag ( method to call in html templates ) &ndash;&gt;-->
 
-<!--   JS link -->
-  <script >
-  // Simple check  -> Inline
-  console.log("✅ JS file is attached and running!");
-  alert("✅ JS file is attached and running!");
-  </script>
-<!--<script src="{% static 'js/other1paage.js' %}"></script>-->    <!-- Django tag method to link js to  html templet -->
+<!--&lt;!&ndash;   JS link &ndash;&gt;-->
+<!--  <script >-->
+<!--  // Simple check  -> Inline-->
+<!--  console.log("✅ JS file is attached and running!");-->
+<!--  alert("✅ JS file is attached and running!");-->
+<!--  </script>-->
+<!--&lt;!&ndash;<script src="{% static 'js/other1paage.js' %}"></script>&ndash;&gt;    &lt;!&ndash; Django tag method to link js to  html templet &ndash;&gt;-->
 
 
-</head>
-<body>
+<!--</head>-->
+<!--<body>-->
 
+<!--  &lt;!&ndash; Header &ndash;&gt;   &lt;!&ndash;Practice for django_15_MODULE &ndash;&gt;-->
+<!--  <header style="background:yellow; ">-->
+<!--    <h1>Welcome to Our Registration Page</h1>-->
+<!--    <nav>-->
+<!--      <a href="/">Home</a> |-->
+<!--      <a href="/about">About</a> |-->
+<!--      <a href="/contact">Contact</a>-->
+<!--    </nav>-->
+<!--    <hr>-->
+<!--  </header>-->
+<!--_______________________________WE LEARN HOW TO CALL OTHER PAGE USING PYTHON CODE_________________________________-->
+<!--_______________________THAT MEANS HOW TO ADD THE CHILD PAGE TO PARENTS PAGE USING PYTHON TAG_____________________-->
+
+
+<!-- It's link the one page to another page using python tag method like <a></a> -->
+<!--{percentage include "top_div_header.html" percentage}-->
+{% extends 'unique_extend_block.html' %}
+{% block middle %}
+
+  <!--Registration from -->
   <h2>Registration Form</h2>
 
   <form action="/submit" method="post">
@@ -70,5 +92,25 @@
 
   </form>
 
-</body>
-</html>
+
+<!--_____________________________WE LEARN HOW TO CALL OTHER PAGE USING PYTHON CODE___________________________________-->
+<!--_____________________________WE LEARN HOW TO CALL OTHER PAGE USING PYTHON CODE___________________________________-->
+
+<!--  &lt;!&ndash; Footer &ndash;&gt;   &lt;!&ndash;Practice for django_15_MODULE &ndash;&gt;-->
+<!--  <hr>-->
+<!--  <footer style="background:yellow;">-->
+<!--    <p>&copy; 2026 My Website | All Rights Reserved</p>-->
+<!--    <p>Follow us:-->
+<!--      <a href="#">Facebook</a> |-->
+<!--      <a href="#">Twitter</a> |-->
+<!--      <a href="#">Instagram</a>-->
+<!--    </p>-->
+<!--  </footer>-->
+
+<!--</body>-->
+<!--</html>-->
+
+<!--_____________________________WE LEARN HOW TO CALL OTHER PAGE USING PYTHON CODE___________________________________-->
+<!--_____________________________WE LEARN HOW TO CALL OTHER PAGE USING PYTHON CODE___________________________________-->
+<!--{percentage include "top_div_footer.html" percentage}-->
+{% endblock %}

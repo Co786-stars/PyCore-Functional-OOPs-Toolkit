@@ -36,7 +36,13 @@ urlpatterns = [
     # path('', views.next_page, name="other_page"),
 
     #try to learn how manage the file
-    path('', views.static_practic, name="otherpage_1"),
+    # path('', views.static_practic, name="otherpage_1"),
+
+    # try to learn how manage the block of code using { extends and block}
+    # path('', views.static_practic_1, name="otherpage_2"),
+
+    # Read about how link the post and get method from
+    path('', views.linkHttpPage, name="httpPostGet"),
 
     # ________________________________________________________________________________________________
 

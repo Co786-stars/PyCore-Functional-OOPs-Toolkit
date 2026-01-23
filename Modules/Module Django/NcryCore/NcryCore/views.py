@@ -108,6 +108,46 @@ def next_page(request):
 
 def static_practic(request):
     return render(request, 'otherpage1_.html')
+
+
+def static_practic_1(request):
+    return render(request, 'unique_extend_block.html')
+
+
+
+
+# ---------GET METHOD :-----
+# def linkHttpPage(request):
+#     detail = {
+#         'frmName': 'Practice Form',
+#         'lst': [10, 20, 30, 40, 50]
+#     }
+#
+#     try:
+#         getdata1st = int(request.GET.get('q1', 0))   # safer with .get()
+#         getdata2nd = int(request.GET.get('q2', 0))
+#         result = getdata1st + getdata2nd
+#         detail['result'] = f"{getdata1st} + {getdata2nd} = {result}"
+#     except:
+#         detail['result'] = "Pls enter valid numbers."
+#
+
+# --------: POST METHOD :-------------
+def linkHttpPage(request):
+    detail = {
+        'frmName': 'Practice Form',
+        'lst': [10, 20, 30, 40, 50]
+    }
+
+    try:
+        postdata1st = str(request.POST.post('username'))  # safer with .get()
+        postdata2nd = str(request.POST.post('Password'))
+        result = postdata1st +  postdata2nd
+        detail['result'] = f"{postdata1st} + {postdata2nd} = {result}"
+    except:
+        detail['result'] = "Pls enter valid numbers."
+
+    return render(request, 'Unique_from.html', detail)
 # __________________________________________________________________________________________________________________
 
 
