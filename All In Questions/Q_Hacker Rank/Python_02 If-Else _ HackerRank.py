@@ -38,14 +38,13 @@ try:
 except ValueError:
     print("pls enter the valid number")
 
-"""
+'''
 #!/bin/python3
 import math
 import os
 import random
 import re
 import sys
-
 
 n = int(input().strip())
 if n % 2 != 0:
@@ -59,9 +58,9 @@ elif n % 2 == 0 and n >= 6 and n <= 20:
 else:
     var = "Not Weird"
 print(var)
-"""
+'''
 
-# Question Task
+# Task/Question:
 # Given an integer, n, perform the following conditional actions:
 #
 # If n is odd, print Weird
