@@ -1,5 +1,3 @@
-
-
 '''
 def is_leap(year):
     leap = False  # means not leap year
@@ -35,3 +33,33 @@ print(is_leap(year))
 Explain leap year : -
 
 """
+class Year:
+    def __init__(self, year):
+        self.year = year
+
+    def actions(self):
+        if (self.year % 400 == 0) or (self.year % 4 == 0 and self.year % 100 != 0):
+            self.leapYear = True
+        else:
+            self.leapYear = False
+        return self.leapYear
+
+class LeapYear(Year):
+    def __init__(self, user):
+        super().__init__(year=user)
+
+    def display(self):
+        # Call actions() here
+        self.actions()
+        if self.leapYear:
+            return f"{self.year} is a leap year"
+        else:
+            return f"{self.year} is NOT a leap year"
+
+try:
+    user_input = int(input("Enter the year : "))
+    obj = LeapYear(user=user_input)
+    print(obj.display())
+except ValueError:
+    print("Pls enter the valid number")
+
