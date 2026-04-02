@@ -29,3 +29,11 @@ try:
     finalValue.display()
 except ValueError:
     print("Pls enter valid number") '''
+
+
+# Extra : - other method
+# if __name__ == '__main__':
+#     a = int(input())
+#     b = int(input())
+#     print(a//b)
+#     print(a/b)

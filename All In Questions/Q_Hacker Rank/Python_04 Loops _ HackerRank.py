@@ -60,3 +60,11 @@ except ValueError:
 # 4
 # The first and only line contains the integer,n.
 
+# Extra : - other method
+# if __name__ == '__main__':
+#     n = int(input())
+#     i = 0
+#     while i < n:
+#         print(f"{i*i}")
+#         i += 1
+

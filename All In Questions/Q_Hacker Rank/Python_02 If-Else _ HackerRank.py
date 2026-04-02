@@ -74,3 +74,18 @@ print(var)
 # 1 <= n <= 100
 # Output Format
 # Print Weird if the number is weird. Otherwise, print Not Weird.
+
+
+
+# Extra : - Other method
+# if __name__ == '__main__':
+#     n = int(input().strip())
+#     if n%2 != 0:
+#         value = "Weird"
+#     elif n%2 == 0  and n <= 5:
+#         value = "Not Weird"
+#     elif n%2 == 0 and n <= 20:
+#         value = "Weird"
+#     else:
+#         value = "Not Weird"
+#     print(value)
