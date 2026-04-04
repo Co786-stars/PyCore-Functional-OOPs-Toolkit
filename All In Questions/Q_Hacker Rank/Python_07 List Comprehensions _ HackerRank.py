@@ -102,13 +102,7 @@ except ValueError:
 #     y = int(input())
 #     z = int(input())
 #     n = int(input())
-#
-# # # Input values
-# # x = int(input())
-# # y = int(input())
-# # z = int(input())
-# # n = int(input())
-#
+
 # # # List comprehension
 # # coordinates = [[i, j, k]
 # #                for i in range(x + 1)
