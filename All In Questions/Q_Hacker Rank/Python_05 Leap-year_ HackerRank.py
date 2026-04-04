@@ -30,8 +30,27 @@ print(is_leap(year))
 # Given a year, determine whether it is a leap year.
 # If it is a leap year, return the Boolean True, otherwise return False.
 """
-Explain leap year : -
+# Explanation of Leap Year Program
+1. The Python interpreter reads the entire program first,
+   but functions are only executed when they are called.
 
+2. We define a function 'is_leap(year)' that takes a parameter 'year'.
+   Inside the function, we set leap = False by default,
+   meaning the year is NOT a leap year.
+
+3. Then we apply the leap year rules:
+   - If the year is divisible by 400 → it is a leap year (e.g., 2000, 2400).
+   - Else if the year is divisible by 4 but NOT divisible by 100 → it is a leap year (e.g., 2012, 2016).
+   - In all other cases, leap remains False (not a leap year).
+
+4. The function returns either True (leap year) or False (not a leap year).
+
+5. Outside the function, we take user input and store it in 'year'.
+
+6. Finally, we call the function inside a print statement:
+   print(is_leap(year))
+   This executes the function and prints True if the year is a leap year,
+   or False if it is not. 
 """
 class Year:
     def __init__(self, year):
