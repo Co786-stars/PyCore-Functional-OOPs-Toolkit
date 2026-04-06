@@ -219,12 +219,20 @@ print(list(func_))
 # - iterable → list, tuple, etc.
 # - Result → filter object (convert to list/tuple to see values)
 
+# Difference :-
+# - map() → transforms all elements
+# - filter() → selects only elements that satisfy condition
+
+
+# How it works :-
+# 1. Takes each element from the iterable.
+# 2. Passes it to the function.
+# 3. If function returns True → element is kept.
+# 4. If function returns False → element is discarded.
+# 5. Returns a filter object (iterator).
+
 # Example :-
 tpl = ('wizard', 'provide', 'wrong', 'or', 'Write')
 check = lambda c: len(c) == 5
 result = filter(check, tpl)
 print(list(result))   # ['wrong', 'Write']
-
-# Difference :-
-# - map() → transforms all elements
-# - filter() → selects only elements that satisfy condition
