@@ -1,8 +1,8 @@
-# Definition:
+# Definition:-
 # map() takes a function and one or more iterables, applies the function to each element,
 # and produces a map object (iterator). Converting it to list/tuple shows the results.
 
-# Syntax:
+# Syntax:-
 # map(function, iterable1, iterable2, ...)
 
 m = ['1', '2', '3', '4']
@@ -52,17 +52,47 @@ Step 5: → Finally, list(t) = [4, 4, 6] is printed.
 
 
 
+
 # Definition :-
-# - A lambda function is an anonymous function (no name) defined with the keyword lambda.
+# - A lambda function is an anonymous (no name) function defined with the keyword `lambda`.
 # - It can take any number of arguments but must have only one expression.
-# - The result of that expression is automatically returned.
+# - The result of that single expression is automatically returned.
+# - Lambda → only one expression (can include inline if … else).
+# - In Python, a lambda cannot hold multiple statements.
+
+# Important Note (confusion clarified):
+# - You cannot write full if/else blocks inside a lambda.
+# - Instead, use a single conditional expression:
+#     lambda d: "Even" if d % 2 == 0 else "Odd"
+# - If you need multiple statements (like printing before and after),
+#   then use a normal def function.
 
 # Syntax :-
 # lambda arguments: expression
+# - lambda → keyword to define the function
+# - arguments → input parameters (like in a normal function)
+# - expression → a single expression that gets evaluated and returned
 
-# Note : -
-# A lambda function is just a quick way to write a function inline, often used when you don’t
-# want to define a full def function.
+
+# Note :-
+# - A lambda function is just a quick way to write a function inline.
+# - Often used when you don’t want to define a full def function.
+
+
+# Difference :-
+# - lambda → one expression only (can use inline if … else).
+# - def → use when you need multiple statements before/after condition.
+
+
+# Example Concept : -
+# # Normal function
+# def square(x):
+#     return x * x
+#
+# # Lambda equivalent
+# square = lambda x: x * x
+# print(square_lambda(5))  # Output: 25
+
 
 
 f = lambda x, y: x + y
@@ -97,3 +127,104 @@ t = map(f, lst)       # now f is applied to each element
 print(list(t))        # Output: [4, 3, 2, 1]
 '''
 
+
+
+
+#########################################################################################
+# ---------------- Code ----------------
+num = [1, 2, 3, 4]
+square = list(map(lambda x: x*x, num))
+print(square)  # [1, 4, 9, 16]
+
+# ---------------- Execution Flow (Hindi) ----------------
+# 1. Sabse pehle ek list 'num' banayi gayi → [1, 2, 3, 4]
+# 2. map() function call hota hai. Ye do cheez leta hai:
+#    - ek function (yaha lambda x: x*x)
+#    - ek iterable (yaha list 'num')
+# 3. map() iterable ke elements ko ek ek karke function ke argument 'x' me bhejta hai.
+# 4. Har iteration me lambda function execute hota hai:
+#    - Pehla element 1 → x=1 → return 1*1 = 1
+#    - Dusra element 2 → x=2 → return 2*2 = 4
+#    - Teesra element 3 → x=3 → return 3*3 = 9
+#    - Chautha element 4 → x=4 → return 4*4 = 16
+# 5. Ye sab return values ek internal iterator (map object) me store hoti hain.
+#    Iterator ek "lazy storage" hai jo values ko ek ek karke ready rakhta hai.
+# 6. Jab hum list() lagate hain, to wo iterator ke andar ke results ko ek proper list me convert kar deta hai.
+# 7. Final output milta hai → [1, 4, 9, 16]
+
+# Note : -
+# - map() ek iterator banata hai (lazy storage).
+# - lambda har element par apply hota hai.
+# - list() us iterator ko ek proper list me convert kar deta hai.
+
+
+
+# ---------------- Execution Flow (English) ----------------
+# 1. First, a list 'num' is created → [1, 2, 3, 4]
+# 2. map() function is called. It takes two things:
+#    - a function (here lambda x: x*x)
+#    - an iterable (here the list 'num')
+# 3. map() sends each element of the iterable one by one into the function’s argument 'x'.
+# 4. On each iteration, the lambda function executes:
+#    - First element 1 → x=1 → return 1*1 = 1
+#    - Second element 2 → x=2 → return 2*2 = 4
+#    - Third element 3 → x=3 → return 3*3 = 9
+#    - Fourth element 4 → x=4 → return 4*4 = 16
+# 5. All these return values are collected inside an internal iterator (map object).
+#    The iterator is a "lazy storage" that keeps values ready one by one.
+# 6. When we call list(), it converts the iterator results into a proper list.
+# 7. Final output → [1, 4, 9, 16]
+
+# Note : -
+# - map() ek iterator banata hai (lazy storage).
+# - lambda har element par apply hota hai.
+# - list() us iterator ko ek proper list me convert kar deta hai.
+
+#########################################################################################
+p = (10, 20, 30)
+# lambda function to check even number
+s = lambda d: d % 2 == 0
+
+# map() applies lambda on each element of tuple
+# list() converts the map object (iterator) into a list
+print(list(map(s, p)))  # [True, True, True]
+
+
+
+# Lambda with conditional expression
+check = lambda d: "Even" if d % 2 == 0 else "Odd"
+print(check(10))  # Even
+print(check(21))  # Odd
+
+
+# lambda with conditional expression
+tpl = ('wizard', 'provide', 'wrong', 'or', 'Write')
+count = lambda c: "Correct" if len(c) == 5 else "Incorrect"
+func_ = map(count, tpl)
+print(list(func_))
+
+
+
+
+
+# Definition :-
+# filter() is used to select elements from a sequence based on a condition.
+# It keeps only those elements for which the function returns True.
+
+# Syntax :-
+# filter(function, iterable)
+
+# Important Note :-
+# - function → should return True or False
+# - iterable → list, tuple, etc.
+# - Result → filter object (convert to list/tuple to see values)
+
+# Example :-
+tpl = ('wizard', 'provide', 'wrong', 'or', 'Write')
+check = lambda c: len(c) == 5
+result = filter(check, tpl)
+print(list(result))   # ['wrong', 'Write']
+
+# Difference :-
+# - map() → transforms all elements
+# - filter() → selects only elements that satisfy condition
