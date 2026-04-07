@@ -143,7 +143,6 @@ print(s)   # all pairs (i, j)
 #   i = 1 → j = 0 → (1,0), j = 1 → (1,1), j = 2 → (1,2)
 #   i = 2 → j = 0 → (2,0), j = 1 → (2,1), j = 2 → (2,2)
 
-
 # - Values are collected into a list automatically
 #   After all iterations: [(0,0), (0,1), (0,2), (1,0), (1,1), (1,2), (2,0), (2,1), (2,2)]
 

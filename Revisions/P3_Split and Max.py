@@ -118,7 +118,8 @@ Explanation:
 
 
 # Example 5: Tuples with key
-records = [(1, 5), (3, 2), (2, 9)]
+# records = [(1, 5), (3, 2), (2, 9)]
+records = [[1, 5], [3, 2], [2, 9]]
 print(max(records, key=lambda x: x[1]))
 '''
 Explanation:
